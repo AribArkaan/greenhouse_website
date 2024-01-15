@@ -4,7 +4,8 @@ body {
   }
   
   footer {
-    background-color: #302f2f;
+
+    background-color: #ceced1;
     color: #fff;
     padding: 20px;
     display: flex;
@@ -12,15 +13,20 @@ body {
     justify-content: space-around;
     align-items: flex-start;
     position: relative;
+    border-radius: 15px;
+    height: 300px;
   }
   
   .contact-info,
   .about-greenhouse {
-    margin: 10px;
+    margin-top: 80px;
+    
+    color: #333;
   }
   
   .about-greenhouse, .contact-info{
     padding-right: 60px;
+    color: #333;
   }
 
   .logo {
@@ -30,12 +36,13 @@ body {
     top: 50%;
     transform: translateY(-50%);
     right: 0;
+    margin-top: 80px;
   }
   
   .logo img {
     max-width: 100%;
     margin-top: -90px;
-    margin-right: 40px;
+    margin-right: 50px;
     padding-bottom: 40px;
     display: flex;
     align-items: center;
@@ -78,6 +85,7 @@ body {
 }
 
   .served {
-    text-align: center; 
-    margin-top: 200px;
+    margin-right: -40px;
+    margin-top: 270px;
+    color: #333;
   }

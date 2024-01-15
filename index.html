@@ -29,7 +29,7 @@
                 <ul class="nav">
                     <li><a href="index.html#">Home</a></li>
                     <li><a href="#information">Information</a></li>
-                    <li><a href="#controll">Controll</a></li>
+                    <li><a href="#controll">Control</a></li>
                 </ul>
             </div>
 
@@ -70,7 +70,7 @@
         </div>
         <div class="tag">
             <p>SOWING SEEDS, BLOOMING FUTURES</p>
-            <a class="button" href="#learn-more">Learn More</a>
+            <a class="button" href="#learn-more">Learn More ></a>
         </div>
 
     </div>
@@ -337,9 +337,15 @@
 <br>
 </div>
 
+<div class="kotakV">
+<div class="video-container">
+    <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/QQqWoY3z1-U" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+
 <div id="controll">
     <div class="box4"></div>
-    <h2 class="INFORMASI4">Controll Data</h2>
+    <h2 class="INFORMASI4">Control Data</h2>
 
     <div class="box-weather">
 
@@ -365,6 +371,14 @@
         </div>
     </div>
     <h1 id="weather">WEATHER INFORMATION</h2>
+
+
+        <div class="button-container">
+            <button class="time-button" onclick="showData('day')">1 Day</button>
+            <button class="time-button" onclick="showData('week')">1 Week</button>
+            <button class="time-button" onclick="showData('month')">1 Month</button>
+        </div>
+
 
     <div class="container">
 
@@ -430,37 +444,44 @@
             </div>
  
         </div>
-
-
-
-        <div class="wrapper">
-            <div class="img-area">
-              <div class="inner-area">
-                <img src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
-              </div>
-            </div>
-           
-            <div class="name">CodingNepal</div>
-            <div class="about">Designer & Developer</div>
-            <div class="social-icons">
-              <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
-            </div>
-          
-              
-             
-             
-            </div>
-          
-
-
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
 
-<iframe src="./footer.html" width="100%" height="300px" frameborder="0"></iframe>
+  <div class="dashboard-container">
+    <div class="avg2">----- &leftharpoondown; .Highest.&rightharpoondown;  -----</div>
+    <div class="highest-value-box">
+      <p id="highestMqtt">suhu: -</p>
+    </div>
+    <div class="highest-value-box">
+      <p id="highestHumid">Humidity: -</p>
+    </div>
+    <div class="highest-value-box">
+      <p id="highestLight">Light: -</p>
+    </div>
+    <div class="highest-value-box">
+      <p id="highestSoil">Soil: -</p>
+    </div>
+  </div>
+
+
+
+  <div class="kotak">
+    <br>
+    <div id="Profile">
+    <div class="line"></div>
+<br>
+    <iframe src="./profile.html" width="100%" height="300px" frameborder="0"></iframe>
+    <br>
+    <iframe src="./profile2.html" width="100%" height="300px" frameborder="0"></iframe>
+  </div>
+
+</div>
+
+<iframe src="./footer.html" width="100%" height="350px" frameborder="0"></iframe>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mqtt/4.2.8/mqtt.min.js"></script>

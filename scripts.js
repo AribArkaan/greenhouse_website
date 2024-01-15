@@ -78,3 +78,49 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+/*=============== SHOW SOCIAL NETWORKS ===============*/
+const showSocial = (toggleCard, socialCard) => {
+    const toggle = document.getElementById(toggleCard),
+      social = document.getElementById(socialCard);
+  
+    toggle.addEventListener("click", () => {
+      //If animation class exist = down-animaiton class add
+      if (social.classList.contains("animation")) {
+        social.classList.add("down-animation");
+  
+        setTimeout(() => {
+          social.classList.remove("down-animation");
+        }, 1000);
+      }
+      //Add the animation to the div tag card__social
+      social.classList.toggle("animation");
+    });
+  };
+  
+  showSocial("card-toggle", "card-social");
+  
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= -5000 &&
+        rect.left >= 20 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Function to play the video when it comes into view
+function playVideoOnScroll() {
+    const youtubeVideo = document.getElementById('youtubeVideo');
+
+    // Check if the video is in the viewport
+    if (isInViewport(youtubeVideo)) {
+        // Play the video
+        youtubeVideo.src += "&autoplay=1";
+        // Remove the scroll event listener once the video is played
+        window.removeEventListener('scroll', playVideoOnScroll);
+    }
+}
+
+// Add a scroll event listener to trigger the playVideoOnScroll function
+window.addEventListener('scroll', playVideoOnScroll);

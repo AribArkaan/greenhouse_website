@@ -162,3 +162,56 @@ client.on('message', function (topic, message) {
         handleMQTTMessage(soilChart, topic, message);
     }
 });
+
+// Variables to store highest values
+let highestMqtt = 0;
+let highestHumid = 0;
+let highestLight = 0;
+let highestSoil = 0;
+
+// Function to update highest values
+function updateHighestValues(payload, type) {
+  switch (type) {
+    case 'MQTT':
+      highestMqtt = Math.max(highestMqtt, payload);
+      document.getElementById('highestMqtt').innerText = `MQTT: ${highestMqtt.toFixed(2)}`;
+      break;
+    case 'Humidity':
+      highestHumid = Math.max(highestHumid, payload);
+      document.getElementById('highestHumid').innerText = `Humidity: ${highestHumid.toFixed(2)}`;
+      break;
+    case 'Light':
+      highestLight = Math.max(highestLight, payload);
+      document.getElementById('highestLight').innerText = `Light: ${highestLight.toFixed(2)}`;
+      break;
+    case 'Soil':
+      highestSoil = Math.max(highestSoil, payload);
+      document.getElementById('highestSoil').innerText = `Soil: ${highestSoil.toFixed(2)}`;
+      break;
+    default:
+      break;
+  }
+}
+
+// MQTT Message Handlers
+client.on('message', function (topic, message) {
+  if (topic.endsWith('suhu')) {
+    handleMQTTMessage(mqttChart, topic, message);
+    updateHighestValues(parseFloat(message.toString()), 'MQTT');
+  } else if (topic.endsWith('humidity')) {
+    handleMQTTMessage(humidChart, topic, message);
+    updateHighestValues(parseFloat(message.toString()), 'Humidity');
+  } else if (topic.endsWith('ldr')) {
+    handleMQTTMessage(lightChart, topic, message);
+    updateHighestValues(parseFloat(message.toString()), 'Light');
+  } else if (topic.endsWith('soil')) {
+    handleMQTTMessage(soilChart, topic, message);
+    updateHighestValues(parseFloat(message.toString()), 'Soil');
+  }
+});
+
+function showData(timeRange) {
+    // You can implement logic to filter and display data based on the selected time range
+    console.log(`Showing data for ${timeRange}`);
+    // For example, you can update chart data or make API calls to fetch data for the selected time range
+}
