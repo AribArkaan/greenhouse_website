@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&family=Varela+Round&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.weather-container {
+    display: flex;
+    justify-content: center; /* Mencenter horizontal */
+    align-items: center; /* Mencenter vertikal */
+    margin-top: 0px;
+}
+
+.info-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Cuprum', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+h2{
+
+font-size: 15px;
+font-family: 'Cuprum', sans-serif;
+font-family: 'Varela Round', sans-serif;
+}

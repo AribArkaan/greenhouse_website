@@ -1,0 +1,161 @@
+body {
+    width: 0xp;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    height: 100%;
+    margin-top: 50px;
+    margin-left: -10px;
+}
+
+/* gambat logo */
+
+#logo_gambar {
+    width: 100px;
+    height: auto;
+    margin-left: -255px;
+    margin-top: -5px;
+    position: relative;
+    z-index: 1;
+}
+
+#shape {
+    width: 200px; /* Sesuaikan lebar sesuai kebutuhan */
+    height: auto; /* Menyesuaikan tinggi secara proporsional */
+    margin-left: -40px;
+}
+
+/* nav menu */
+
+
+.box {
+    align-items: center;
+    width: fit-content;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.363); /* Efek drop shadow */
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-left: 150px;
+}
+
+.box2 {
+    width: fit-content;
+    padding: 10px;
+    padding-bottom: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.363); /* Efek drop shadow */
+    margin-left: 300px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: -12px;
+}
+
+
+
+.nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    /* margin-left: -20px; */
+    margin-right: 30px;
+}
+
+.nav li {
+    margin-left: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav li:hover a {
+    color: rgb(95, 182, 24);
+}
+
+.nav li::before a {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: rgb(95, 182, 24);
+    transition: width 0.3s ease, left 0.3s ease; /* Efek transisi lebar dan posisi */
+}
+
+.nav li:hover a::before {
+    width: 100%;
+    left: 0;
+}
+
+
+/* Icon */
+
+.icon {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    margin-left: auto;
+    margin-top: -5px;               
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.icon li {
+    margin-left: 5px;
+}
+
+.icon a {
+    display: inline-block;
+    position: relative;
+}
+
+.icon img {
+    width: 30px;
+    height: auto;
+    border-radius: 50%; 
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+
+}
+
+.icon a:hover img {
+    background-color: #ffffff;
+    transform: scale(1.1); 
+}
+
+.font {
+height: auto;
+width: 300px;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

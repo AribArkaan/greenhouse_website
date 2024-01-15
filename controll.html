@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Range Slider in HTML CSS & JavaScript</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="controll.css" />
+    <!-- Unicons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+
+
+   
+
+    <div class="wrapper">
+      <div class="slider-item" data-icon="icon air.png">
+        <img class="icon" src="assets/icon air.png" alt="Icon 1">
+        <input type="range" min="0" step="1" max="100" value="0" />
+        <span class="slide-value">0</span>
+      </div>
+
+      <div class="slider-item" data-icon="icon temp.png">
+        <img class="icon" src="assets/icon kipas.png" alt="Icon 2">
+        <input type="range" min="0" step="1" max="100" value="0" />
+        <span class="slide-value">0</span>
+      </div>
+
+      <div class="slider-item" data-icon="icon lampu.png">
+        <img class="icon" src="assets/icon lampu.png" alt="Icon 3">
+        <input type="range" min="0" step="1" max="100" value="0" />
+        <span class="slide-value">0</span>
+      </div>
+
+      <div class="slider-item" data-icon="icon kipas.png">
+        <img class="icon" src="assets/icon temp.png" alt="Icon 4">
+        <input type="range" min="0" step="1" max="100" value="0" />
+        <span class="slide-value">0</span>
+      </div>
+    </div>
+
+
+   
+   
+    <div class="card">
+        <div class="card-content">
+            <img src="assets/icon air.png" alt="Icon 1">
+            <input type="checkbox" id="checkbox1" class="checkbox">
+            <label for="checkbox1" class="switch">
+                <div class="powersign"></div>
+            </label>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <img src="assets/icon temp.png" alt="Icon 2">
+            <input type="checkbox" id="checkbox2" class="checkbox">
+            <label for="checkbox2" class="switch">
+                <div class="powersign"></div>
+            </label>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <img src="assets/icon lampu.png" alt="Icon 3">
+            <input type="checkbox" id="checkbox3" class="checkbox">
+            <label for="checkbox3" class="switch">
+                <div class="powersign"></div>
+            </label>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <img src="assets/icon kipas.png" alt="Icon 4">
+            <input type="checkbox" id="checkbox4" class="checkbox">
+            <label for="checkbox4" class="switch">
+                <div class="powersign"></div>
+            </label>
+        </div>
+    </div>
+
+    <script src="controll.js"></script>
+  </body>
+</html>
