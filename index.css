@@ -938,63 +938,11 @@ margin-top: -100px;
   margin-bottom: -300px;
 }
 
-.box1{
-
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: 20px;
-  text-align: center;
-  background-color: #f5f5f5;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  font-family: 'Cuprum', sans-serif;
-  font-family: 'Varela Round', sans-serif;
-}
-
-.row {
-  display: flex; /* Atur display menjadi flex */
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-bottom: -10px;
-  transition: all 0.5s ease-in-out; /* Menerapkan transisi untuk perubahan konten */
-  justify-content: center; /* Mencenter horizontal */
-  align-items: center; /* Mencenter vertikal */
-}
-
-.avg {
-  position: absolute;
-  color: #ddd;
-  padding: 5px 10px;
-  align-items: center;
-  margin-bottom: 150px;
-  font-size: 30px;
-  padding-bottom: 30px;
-  font-family: 'Cuprum', sans-serif;
-  font-family: 'Varela Round', sans-serif;
-}
-
-.avg2 {
-  position: absolute;
-  color: #ddd;
-  padding: 5px 10px;
-  align-items: center;
-  margin-bottom: 150px;
-  font-size: 30px;
-  padding-bottom: 30px;
-  margin-left: 200px;
-  font-family: 'Cuprum', sans-serif;
-  font-family: 'Varela Round', sans-serif;
-}
 
 .weather-container {
   display: flex;
-  justify-content: center; /* Mencenter horizontal */
-  align-items: center; /* Mencenter vertikal */
-  margin-top: -400px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .info-box {
@@ -1011,6 +959,17 @@ margin-top: -100px;
   font-family: 'Cuprum', sans-serif;
   font-family: 'Varela Round', sans-serif;
 }
+
+
+  #weather {
+    width: 60%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 30px;
+  }
+
+
 
 .box-weather {
   background-color: #302f2f;
@@ -1279,28 +1238,83 @@ p a:hover::before {
   pointer-events: auto;
 }
 
-/* .dashboard-container {
-  display: flex;
-  justify-content: space-around;
+
+
+.infonilai{
   align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
-} */
+  position: relative;
+  margin-left: 250px;
+
+}
+
+.box1{
+
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-right: 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Cuprum', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.row2 {
+  display: flex; /* Atur display menjadi flex */
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  transition: all 0.5s ease-in-out; /* Menerapkan transisi untuk perubahan konten */
+  margin-left: -20px;
+  align-items: center; /* Mencenter vertikal */
+}
+
+.avg {
+  position: absolute;
+  color: #ddd;
+  padding: 5px 10px;
+  align-items: center;
+  margin-bottom: 150px;
+  font-size: 30px;
+  padding-bottom: 30px;
+  font-family: 'Cuprum', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.avg2 {
+  position: absolute;
+  color: #ddd;
+  padding: 5px 10px;
+  align-items: center;
+  margin-bottom: 150px;
+  font-size: 30px;
+  padding-bottom: 30px;
+  margin-left: 0px;
+  font-family: 'Cuprum', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
 
 .dashboard-container {
   display: flex;
   align-items: center;
   gap: 50px;
-  margin-left: 350px;
+  margin-left: 550px;
+  margin-top: -75px;
 }
 
 .highest-value-box {
   text-align: center;
   background-color: #fff;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 150px;
+  
 }
 
 .kotak{
