@@ -153,3 +153,9 @@ setInterval(function () {
 // Initial API data retrieval
 handleApiData(lightChart, 'Light');
 handleApiData(soilChart, 'Soil');
+
+
+
+
+  
+
