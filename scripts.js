@@ -1,3 +1,26 @@
+const popup = document.querySelector('.popup');
+
+function showPopup() {
+  popup.classList.add('show');
+}
+
+function hidePopup() {
+  popup.classList.remove('show');
+}
+
+// Add event listeners to show/hide the popup as needed
+// (e.g., button clicks, form submissions, or other triggers)
+const showButton = document.getElementById('popup'); // Replace with your actual button ID
+showButton.addEventListener('click', showPopup);
+
+// Or, for hiding based on clicking outside the popup:
+popup.addEventListener('click', (event) => {
+  if (event.target === popup) {
+    hidePopup();
+  }
+});
+
+
 document.getElementById("learnMoreButton").addEventListener("click", function() {
     document.getElementById("popup").style.display = "block";
 });
@@ -62,7 +85,32 @@ document.addEventListener('DOMContentLoaded', function () {
   
 
   document.addEventListener('DOMContentLoaded', function () {
-    const navLinks = document.querySelectorAll('.nav a, .profile-link');
+    const navLinks = document.querySelectorAll('.nav a, learn-more');
+  
+    navLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+  
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+          });
+  
+          // Optional: Highlight the active link
+          navLinks.forEach(navLink => {
+            navLink.classList.remove('active');
+          });
+          this.classList.add('active');
+        }
+      });
+    });
+  });
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.nav a, .button');
   
     navLinks.forEach(link => {
       link.addEventListener('click', function (e) {

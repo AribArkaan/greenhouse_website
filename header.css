@@ -39,8 +39,8 @@ body {
     align-items: center;
     width: fit-content;
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.363); /* Efek drop shadow */
-    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(206, 204, 204, 0.685); /* Efek drop shadow */
+    border-radius: 40px;
     background-color: #ffffff;
     margin-left: 150px;
 }
@@ -62,40 +62,89 @@ body {
     list-style: none;
     display: flex;
     margin: 0;
-    /* margin-left: -20px; */
     margin-right: 30px;
 }
 
 .nav li {
     margin-left: 30px;
+    position: relative;
 }
 
 .nav a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    position: relative;
+    overflow: hidden; /* Menyembunyikan overflow dari pseudo-element */
 }
 
-.nav li:hover a {
-    color: rgb(95, 182, 24);
-}
-
-.nav li::before a {
+.nav li::before {
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 50%;
+    bottom: -13px;
     width: 0;
-    height: 2px;
+    height: 4px;
     background-color: rgb(95, 182, 24);
-    transition: width 0.3s ease, left 0.3s ease; /* Efek transisi lebar dan posisi */
+    transition: width 0.3s ease, left 0.3s ease;
+    transform: translate( 0, -50%);
+    border-radius: 20px; 
+    
 }
 
-.nav li:hover a::before {
+
+.nav li:hover::before {
     width: 100%;
     left: 0;
 }
+
+
+/* hover text */
+.nav a:hover {
+    color: rgb(95, 182, 24);
+}
+
+
+
+/* profile button */
+
+.box2 p {
+
+    font-family: 'Cuprum', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    margin-bottom: 0px;
+    padding: 5px;
+    margin-top: -9px;
+   
+  }
+
+p a {
+    color: #333; /* Warna default */
+    position: relative;
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    color: rgb(95, 182, 24); /* Warna saat dihover */
+    text-decoration: none;
+  }
+  
+  p a::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    width: 0;
+    height: 4px;
+    background-color: rgb(95, 182, 24);
+    transition: width 0.3s ease, left 0.3s ease;
+    transform: translate( 0, -50%);
+    border-radius: 20px; 
+  }
+  
+  p a:hover::before {
+    width: 100%;
+    left: 0;
+  }
+
+
 
 
 /* Icon */
