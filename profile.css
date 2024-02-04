@@ -26,7 +26,8 @@ body {
     background-color: #242628;
     overflow: hidden;
     margin: 0 30px;
-    margin-bottom: 20px; /* Added margin between cards */
+    margin-bottom: 20px;
+    /* Added margin between cards */
 }
 
 .card__img {
@@ -142,6 +143,7 @@ button:hover {
     background-color: #242628;
     overflow: hidden;
     margin: 0 30px;
-    margin-bottom: 20px; /* Added margin between cards */
-    
+    margin-bottom: 20px;
+    /* Added margin between cards */
+
 }

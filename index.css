@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 @import "compass/css3";
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,16 +16,16 @@
 
 html {
 
-margin: unset;
-padding: unset;
+  margin: unset;
+  padding: unset;
 
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Arial', sans-serif;
-    background-color: #1f1e1e;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Arial', sans-serif;
+  background-color: #1f1e1e;
 }
 
 .chart-container2 {
@@ -38,19 +38,20 @@ body {
 }
 
 .hero {
-    margin-top: -50px;
-    background-size: cover;
-    height: 110vh;
-    color: #0000002c;
-    /* background-color: rgba(28, 29, 28, 0); */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-bottom: 0px solid #fff; /* Tambahkan batas bawah sebanyak yang Anda inginkan */
-    
-   
+  margin-top: -50px;
+  background-size: cover;
+  height: 110vh;
+  color: #0000002c;
+  /* background-color: rgba(28, 29, 28, 0); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 0px solid #fff;
+  /* Tambahkan batas bawah sebanyak yang Anda inginkan */
+
+
 }
 
 .hero::before {
@@ -64,21 +65,22 @@ body {
   background-size: cover;
   background-position: center;
   filter: brightness(30%);
-  z-index: -1; /* Menempatkan pseudo-element di belakang background */
+  z-index: -1;
+  /* Menempatkan pseudo-element di belakang background */
 }
 
 
-#clock{
+#clock {
 
   font-family: 'Sixtyfour', sans-serif;
 
 }
 
 .font-move {
-  height:77px;
-  overflow:hidden;
-  background:rgba(255, 255, 255, 0.534);
-  width:25%;
+  height: 77px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.534);
+  width: 25%;
   margin-left: -950px;
   margin-top: 100px;
   margin-bottom: -50px;
@@ -87,58 +89,79 @@ body {
   animation: electricShock 2s infinite;
   border: 3px solid #ddd;
 
-  .move-box-layer{
- -webkit-animation:font-move 18s cubic-bezier(1, 0, 0.29, 0.73) infinite both;
-    position:relative;
+  .move-box-layer {
+    -webkit-animation: font-move 18s cubic-bezier(1, 0, 0.29, 0.73) infinite both;
+    position: relative;
   }
+
   span {
     color: #ffffff;
     font-family: 'Sixtyfour', sans-serif;
-    height:77px;
-    width:100%;
-    position:absolute;
-    line-height:77px;
-    font-size:25px;
-    text-align:center;
+    height: 77px;
+    width: 100%;
+    position: absolute;
+    line-height: 77px;
+    font-size: 25px;
+    text-align: center;
   }
-  span:nth-of-type(1){
-     left:0%;
+
+  span:nth-of-type(1) {
+    left: 0%;
   }
-  span:nth-of-type(2){
-     left:100%;
+
+  span:nth-of-type(2) {
+    left: 100%;
   }
-  span:nth-of-type(3){
-     left:200%;
+
+  span:nth-of-type(3) {
+    left: 200%;
   }
-  span:nth-of-type(4){
-     left:300%;
+
+  span:nth-of-type(4) {
+    left: 300%;
   }
-  span:nth-of-type(5){
-     left:400%;
+
+  span:nth-of-type(5) {
+    left: 400%;
   }
-  span:nth-of-type(6){
-     left:500%;
+
+  span:nth-of-type(6) {
+    left: 500%;
   }
 }
+
 @-webkit-keyframes font-move {
-  0%,12% {
-      left:0%;
+
+  0%,
+  12% {
+    left: 0%;
   }
-  17%,29% {
-      left:-100%;
+
+  17%,
+  29% {
+    left: -100%;
   }
-  34%,46% {
-      left:-200%;
+
+  34%,
+  46% {
+    left: -200%;
   }
-  51%,63% {
-      left:-300%;
+
+  51%,
+  63% {
+    left: -300%;
   }
-  68%,80% {
-      left:-400%;
+
+  68%,
+  80% {
+    left: -400%;
   }
-  85%,95% {
-      left:-500%;
+
+  85%,
+  95% {
+    left: -500%;
   }
+
   /* 100% {
      left:-600%;
   } */
@@ -149,7 +172,7 @@ body {
     box-shadow: 0 0 40px rgba(250, 250, 250, 0.644);
     border-color: #ddd;
   }
-  
+
   40% {
     box-shadow: 0 0 40px rgba(250, 250, 250, 0.644);
     border-color: #ddd;
@@ -161,7 +184,7 @@ body {
   }
 
   55% {
-   box-shadow: 0 0 40px rgba(250, 250, 250, 0.644);
+    box-shadow: 0 0 40px rgba(250, 250, 250, 0.644);
     border-color: #ddd;
   }
 
@@ -169,7 +192,7 @@ body {
     box-shadow: 0 0 40px rgba(85, 84, 84, 0.8);
     border-color: rgb(75, 73, 73);
   }
-  
+
   68% {
     box-shadow: 0 0 40px rgba(250, 250, 250, 0.644);
     border-color: #ddd;
@@ -199,7 +222,7 @@ body {
   }
 
 
-100% {
+  100% {
     box-shadow: 0 0 40px rgba(250, 250, 250, 0.644);
     border-color: #ddd;
   }
@@ -227,28 +250,30 @@ body {
 
 
 .button {
-    display: inline-block;
-    margin-top: 200px; /* Sesuaikan jarak antara h2 dan button */
-    padding: 10px 20px;
-    background-color: rgb(244, 119, 3);
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    margin-left: -1150px;
-   
+  display: inline-block;
+  margin-top: 200px;
+  /* Sesuaikan jarak antara h2 dan button */
+  padding: 10px 20px;
+  background-color: rgb(244, 119, 3);
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: -1150px;
+
 }
 
 .button:hover {
-    background-color: #fff;
-    color: #333;
-    text-decoration: none;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
 }
 
 .button2 {
   display: inline-block;
-  margin-top: 10px; /* Sesuaikan jarak antara h2 dan button */
+  margin-top: 10px;
+  /* Sesuaikan jarak antara h2 dan button */
   padding: 10px 20px;
   background-color: rgb(244, 119, 3);
   color: #fff;
@@ -270,21 +295,26 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #1f1e1ede; /* Softer background for better readability */
+  background-color: #1f1e1ede;
+  /* Softer background for better readability */
   padding: 30px;
-  border-radius: 15px; /* Increased border-radius for a smoother look */
-  box-shadow: 0px 20px 20px rgba(121, 120, 120, 0.863); /* Added a subtle box-shadow */
+  border-radius: 15px;
+  /* Increased border-radius for a smoother look */
+  box-shadow: 0px 20px 20px rgba(121, 120, 120, 0.863);
+  /* Added a subtle box-shadow */
   z-index: 1;
   max-width: 400px;
   width: 100%;
   opacity: 100%;
-  transition: all 60s ease-in-out; /* Smoother transition */
+  transition: all 60s ease-in-out;
+  /* Smoother transition */
   backdrop-filter: blur(3px);
 }
 
 .popup.show {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1) translateY(-50px); /* Slide-in animation */
+  transform: translate(-50%, -50%) scale(1) translateY(-50px);
+  /* Slide-in animation */
 }
 
 .popup h2 {
@@ -322,21 +352,26 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #1f1e1ede; /* Softer background for better readability */
+  background-color: #1f1e1ede;
+  /* Softer background for better readability */
   padding: 30px;
-  border-radius: 15px; /* Increased border-radius for a smoother look */
-  box-shadow: 0px 20px 20px rgba(121, 120, 120, 0.863); /* Added a subtle box-shadow */
+  border-radius: 15px;
+  /* Increased border-radius for a smoother look */
+  box-shadow: 0px 20px 20px rgba(121, 120, 120, 0.863);
+  /* Added a subtle box-shadow */
   z-index: 1;
   max-width: 400px;
   width: 100%;
   opacity: 100%;
-  transition: all 60s ease-in-out; /* Smoother transition */
+  transition: all 60s ease-in-out;
+  /* Smoother transition */
   backdrop-filter: blur(3px);
 }
 
 .popup2.show {
   display: block;
-  opacity: 1; /* Munculkan popup dengan animasi opacity */
+  opacity: 1;
+  /* Munculkan popup dengan animasi opacity */
   transform: translate(-50%, -50%) scale(1);
 }
 
@@ -372,7 +407,8 @@ body {
 
 .button3 {
   display: inline-block;
-  margin-top: 10px; /* Sesuaikan jarak antara h2 dan button */
+  margin-top: 10px;
+  /* Sesuaikan jarak antara h2 dan button */
   padding: 10px 20px;
   background-color: rgb(244, 119, 3);
   color: #fff;
@@ -390,7 +426,8 @@ body {
 
 .button4 {
   display: inline-block;
-  margin-top: 10px; /* Sesuaikan jarak antara h2 dan button */
+  margin-top: 10px;
+  /* Sesuaikan jarak antara h2 dan button */
   padding: 10px 20px;
   background-color: rgb(244, 119, 3);
   color: #fff;
@@ -412,15 +449,19 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #1f1e1ede; /* Softer background for better readability */
+  background-color: #1f1e1ede;
+  /* Softer background for better readability */
   padding: 30px;
-  border-radius: 15px; /* Increased border-radius for a smoother look */
-  box-shadow: 0px 20px 20px rgba(121, 120, 120, 0.863); /* Added a subtle box-shadow */
+  border-radius: 15px;
+  /* Increased border-radius for a smoother look */
+  box-shadow: 0px 20px 20px rgba(121, 120, 120, 0.863);
+  /* Added a subtle box-shadow */
   z-index: 1;
   max-width: 400px;
   width: 100%;
   opacity: 100%;
-  transition: all 60s ease-in-out; /* Smoother transition */
+  transition: all 60s ease-in-out;
+  /* Smoother transition */
   backdrop-filter: blur(3px);
 }
 
@@ -456,7 +497,8 @@ body {
 /* ----------------------- */
 .button5 {
   display: inline-block;
-  margin-top: 10px; /* Sesuaikan jarak antara h2 dan button */
+  margin-top: 10px;
+  /* Sesuaikan jarak antara h2 dan button */
   padding: 10px 20px;
   background-color: rgb(244, 119, 3);
   color: #fff;
@@ -478,15 +520,19 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #1f1e1ede; /* Softer background for better readability */
+  background-color: #1f1e1ede;
+  /* Softer background for better readability */
   padding: 30px;
-  border-radius: 15px; /* Increased border-radius for a smoother look */
-  box-shadow: 0px 20px 20px rgba(121, 120, 120, 0.863); /* Added a subtle box-shadow */
+  border-radius: 15px;
+  /* Increased border-radius for a smoother look */
+  box-shadow: 0px 20px 20px rgba(121, 120, 120, 0.863);
+  /* Added a subtle box-shadow */
   z-index: 1;
   max-width: 400px;
   width: 100%;
   opacity: 100%;
-  transition: all 60s ease-in-out; /* Smoother transition */
+  transition: all 60s ease-in-out;
+  /* Smoother transition */
   backdrop-filter: blur(3px);
 
 }
@@ -525,33 +571,33 @@ body {
 /* font */
 
 .font {
-    position: relative;
-    margin-top: 100px;
-    margin-left: -250px;
-  }
-  
-  .font h2 {
-    color: #e4e0e0;
-    font-size: 8em;
-    position: absolute;
-    transform: translate(-50%, -50%);
-  }
-  
-  .font h2:nth-child(1) {
-    color: transparent;
-    -webkit-text-stroke: 2px #ffffff;
-  }
-  
-  .font h2:nth-child(2) {
-    color: rgb(244, 119, 3);
-    animation: animate 4s ease-in-out infinite;
-  }
-  
-  @keyframes animate {
-    0%,
-    100% {
-      clip-path: polygon(
-        0% 45%,
+  position: relative;
+  margin-top: 100px;
+  margin-left: -250px;
+}
+
+.font h2 {
+  color: #e4e0e0;
+  font-size: 8em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.font h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+}
+
+.font h2:nth-child(2) {
+  color: rgb(244, 119, 3);
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+  0%,
+  100% {
+    clip-path: polygon(0% 45%,
         16% 44%,
         33% 50%,
         54% 60%,
@@ -559,13 +605,11 @@ body {
         84% 59%,
         100% 52%,
         100% 100%,
-        0% 100%
-      );
-    }
-  
-    50% {
-      clip-path: polygon(
-        0% 60%,
+        0% 100%);
+  }
+
+  50% {
+    clip-path: polygon(0% 60%,
         15% 65%,
         34% 66%,
         51% 62%,
@@ -573,79 +617,84 @@ body {
         84% 45%,
         100% 46%,
         100% 100%,
-        0% 100%
-      );
-    }
+        0% 100%);
   }
+}
 
-  .ilustrasi {
+.ilustrasi {
   position: absolute;
   width: 500px;
   height: 500px;
   margin-top: 100px;
   margin-right: -830px;
-  
-  }
 
-  .hero p {
-    font-family: 'Your Font', sans-serif; /* Ganti 'Your Font' dengan jenis font yang Anda inginkan */
-    font-size: 20px; /* Sesuaikan ukuran font sesuai kebutuhan */
-    color: #ffffff; /* Sesuaikan warna font sesuai kebutuhan */
-    line-height: 1.5; /* Sesuaikan tinggi baris sesuai kebutuhan */
-    margin-top: 200px; /* Sesuaikan margin sesuai kebutuhan */
-    margin-left: -910px;
-    font-family: 'Varela Round', sans-serif;
+}
+
+.hero p {
+  font-family: 'Your Font', sans-serif;
+  /* Ganti 'Your Font' dengan jenis font yang Anda inginkan */
+  font-size: 20px;
+  /* Sesuaikan ukuran font sesuai kebutuhan */
+  color: #ffffff;
+  /* Sesuaikan warna font sesuai kebutuhan */
+  line-height: 1.5;
+  /* Sesuaikan tinggi baris sesuai kebutuhan */
+  margin-top: 200px;
+  /* Sesuaikan margin sesuai kebutuhan */
+  margin-left: -910px;
+  font-family: 'Varela Round', sans-serif;
 }
 
 /* Contoh properti tambahan: */
 .hero p strong {
-    font-weight: bold; /* Membuat teks tebal */
+  font-weight: bold;
+  /* Membuat teks tebal */
 }
 
 
-.tag{
-margin-top: -100px;
+.tag {
+  margin-top: -100px;
 }
 
 
 /* informasi */
 
-.INFORMASI{
+.INFORMASI {
   margin-top: -100px;
   color: #f2f2f2;
   padding: 20px;
   text-align: center;
   font-size: 50px;
   margin-bottom: 50px;
-  }
-  
-  .INFORMASI2{
-    margin-top: 100px;
-    color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 100px;
-    }
+}
 
-    .INFORMASI3{
-      margin-top: 150px;
-      color:rgb(244, 119, 3);
-      padding: 20px;
-      text-align: center;
-      font-size: 50px;
-      margin-bottom: 150px;
-      }
+.INFORMASI2 {
+  margin-top: 100px;
+  color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 100px;
+}
 
-      .INFORMASI4{
-        margin-top: 150px;
-        color:rgb(244, 119, 3);
-        padding: 20px;
-        text-align: center;
-        font-size: 50px;
-        margin-bottom: 10px;
-        }
-  
+.INFORMASI3 {
+  margin-top: 150px;
+  color: rgb(244, 119, 3);
+  padding: 20px;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 150px;
+}
+
+.INFORMASI4 {
+  margin-top: 150px;
+  color: rgb(244, 119, 3);
+  padding: 20px;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
 
 .box3 {
   height: 300px;
@@ -680,23 +729,29 @@ margin-top: -100px;
 .jenis1 {
   display: flex;
   align-items: center;
-  max-width: 1000px; /* Sesuaikan lebar sesuai kebutuhan */
-  margin: 0 auto; /* Agar berada di tengah halaman */
+  max-width: 1000px;
+  /* Sesuaikan lebar sesuai kebutuhan */
+  margin: 0 auto;
+  /* Agar berada di tengah halaman */
 }
 
 .jenis1 img {
-  width: 50%; /* Sesuaikan lebar gambar sesuai kebutuhan */
+  width: 50%;
+  /* Sesuaikan lebar gambar sesuai kebutuhan */
   border-radius: 20px;
 }
 
 .ket {
-  max-width: 50%; /* Sesuaikan lebar kontainer teks sesuai kebutuhan */
-  margin-left: 30px; /* Sesuaikan jarak antara gambar dan teks */
+  max-width: 50%;
+  /* Sesuaikan lebar kontainer teks sesuai kebutuhan */
+  margin-left: 30px;
+  /* Sesuaikan jarak antara gambar dan teks */
 }
 
 .jenis1 h3 {
   color: #333;
-  font-size: 24px; /* Sesuaikan ukuran font sesuai kebutuhan */
+  font-size: 24px;
+  /* Sesuaikan ukuran font sesuai kebutuhan */
   font-weight: bold;
   margin-bottom: 10px;
   color: rgb(244, 119, 3);
@@ -704,7 +759,8 @@ margin-top: -100px;
 
 .jenis1 p {
   color: #333;
-  font-size: 16px; /* Sesuaikan ukuran font sesuai kebutuhan */
+  font-size: 16px;
+  /* Sesuaikan ukuran font sesuai kebutuhan */
   text-align: justify;
   margin: 0;
   color: #e4e0e0;
@@ -715,26 +771,34 @@ margin-top: -100px;
 .jenis2 {
   display: flex;
   align-items: center;
-  max-width: 1000px; /* Sesuaikan lebar sesuai kebutuhan */
-  margin: 0 auto; /* Agar berada di tengah halaman */
+  max-width: 1000px;
+  /* Sesuaikan lebar sesuai kebutuhan */
+  margin: 0 auto;
+  /* Agar berada di tengah halaman */
   margin-top: 50px;
 }
 
 .jenis2 img {
-  width: 50%; /* Sesuaikan lebar gambar sesuai kebutuhan */
+  width: 50%;
+  /* Sesuaikan lebar gambar sesuai kebutuhan */
   border-radius: 20px;
-  order: 2; /* Menentukan urutan tampilan elemen dalam flex container */
+  order: 2;
+  /* Menentukan urutan tampilan elemen dalam flex container */
 }
 
 .ket {
-  max-width: 50%; /* Sesuaikan lebar kontainer teks sesuai kebutuhan */
-  margin-right: 30px; /* Sesuaikan jarak antara gambar dan teks */
-  order: 1; /* Menentukan urutan tampilan elemen dalam flex container */
+  max-width: 50%;
+  /* Sesuaikan lebar kontainer teks sesuai kebutuhan */
+  margin-right: 30px;
+  /* Sesuaikan jarak antara gambar dan teks */
+  order: 1;
+  /* Menentukan urutan tampilan elemen dalam flex container */
 }
 
 .jenis2 h3 {
   color: #333;
-  font-size: 24px; /* Sesuaikan ukuran font sesuai kebutuhan */
+  font-size: 24px;
+  /* Sesuaikan ukuran font sesuai kebutuhan */
   font-weight: bold;
   margin-bottom: 10px;
   color: rgb(244, 119, 3);
@@ -742,14 +806,16 @@ margin-top: -100px;
 
 .jenis2 p {
   color: #333;
-  font-size: 16px; /* Sesuaikan ukuran font sesuai kebutuhan */
+  font-size: 16px;
+  /* Sesuaikan ukuran font sesuai kebutuhan */
   text-align: justify;
   margin: 0;
   color: #e4e0e0;
 }
 
 .jenis2 h3 {
-  font-size: 24px; /* Sesuaikan ukuran font sesuai kebutuhan */
+  font-size: 24px;
+  /* Sesuaikan ukuran font sesuai kebutuhan */
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -760,20 +826,24 @@ margin-top: -100px;
 .jenis3 {
   display: flex;
   align-items: center;
-  max-width: 1000px; /* Sesuaikan lebar sesuai kebutuhan */
-  margin: 0 auto; /* Agar berada di tengah halaman */
+  max-width: 1000px;
+  /* Sesuaikan lebar sesuai kebutuhan */
+  margin: 0 auto;
+  /* Agar berada di tengah halaman */
   margin-top: 50px;
 }
 
 .jenis3 img {
-  width: 50%; /* Sesuaikan lebar gambar sesuai kebutuhan */
+  width: 50%;
+  /* Sesuaikan lebar gambar sesuai kebutuhan */
   border-radius: 20px;
 }
 
 
 .jenis3 h3 {
   color: #333;
-  font-size: 24px; /* Sesuaikan ukuran font sesuai kebutuhan */
+  font-size: 24px;
+  /* Sesuaikan ukuran font sesuai kebutuhan */
   font-weight: bold;
   margin-bottom: 10px;
   color: rgb(244, 119, 3);
@@ -781,7 +851,8 @@ margin-top: -100px;
 
 .jenis3 p {
   color: #333;
-  font-size: 16px; /* Sesuaikan ukuran font sesuai kebutuhan */
+  font-size: 16px;
+  /* Sesuaikan ukuran font sesuai kebutuhan */
   text-align: justify;
   margin: 0;
   color: #e4e0e0;
@@ -793,26 +864,34 @@ margin-top: -100px;
 .jenis4 {
   display: flex;
   align-items: center;
-  max-width: 1000px; /* Sesuaikan lebar sesuai kebutuhan */
-  margin: 0 auto; /* Agar berada di tengah halaman */
+  max-width: 1000px;
+  /* Sesuaikan lebar sesuai kebutuhan */
+  margin: 0 auto;
+  /* Agar berada di tengah halaman */
   margin-top: 50px;
 }
 
 .jenis4 img {
-  width: 50%; /* Sesuaikan lebar gambar sesuai kebutuhan */
+  width: 50%;
+  /* Sesuaikan lebar gambar sesuai kebutuhan */
   border-radius: 20px;
-  order: 2; /* Menentukan urutan tampilan elemen dalam flex container */
+  order: 2;
+  /* Menentukan urutan tampilan elemen dalam flex container */
 }
 
 .ket {
-  max-width: 50%; /* Sesuaikan lebar kontainer teks sesuai kebutuhan */
-  margin-right: 30px; /* Sesuaikan jarak antara gambar dan teks */
-  order: 1; /* Menentukan urutan tampilan elemen dalam flex container */
+  max-width: 50%;
+  /* Sesuaikan lebar kontainer teks sesuai kebutuhan */
+  margin-right: 30px;
+  /* Sesuaikan jarak antara gambar dan teks */
+  order: 1;
+  /* Menentukan urutan tampilan elemen dalam flex container */
 }
 
 .jenis4 h3 {
   color: #333;
-  font-size: 24px; /* Sesuaikan ukuran font sesuai kebutuhan */
+  font-size: 24px;
+  /* Sesuaikan ukuran font sesuai kebutuhan */
   font-weight: bold;
   margin-bottom: 10px;
   color: rgb(244, 119, 3);
@@ -820,14 +899,16 @@ margin-top: -100px;
 
 .jenis4 p {
   color: #333;
-  font-size: 16px; /* Sesuaikan ukuran font sesuai kebutuhan */
+  font-size: 16px;
+  /* Sesuaikan ukuran font sesuai kebutuhan */
   text-align: justify;
   margin: 0;
   color: #e4e0e0;
 }
 
 .jenis4 h3 {
-  font-size: 24px; /* Sesuaikan ukuran font sesuai kebutuhan */
+  font-size: 24px;
+  /* Sesuaikan ukuran font sesuai kebutuhan */
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -835,16 +916,17 @@ margin-top: -100px;
 /* ----------------- */
 
 
-.langkah{
+.langkah {
 
-margin-left: 25px;
+  margin-left: 25px;
 
 }
 
 
 .checkout-container {
   display: flex;
-  align-items: center; /* Tengahkan secara vertikal */
+  align-items: center;
+  /* Tengahkan secara vertikal */
   margin-left: 400px;
   margin-bottom: 20px;
 }
@@ -859,27 +941,36 @@ margin-left: 25px;
 
 
 @keyframes changeColor {
-  0%, 100% {
+
+  0%,
+  100% {
     background-color: #ffffff;
   }
+
   12.5% {
     background-color: rgb(244, 119, 3);
   }
+
   25% {
     background-color: #ffffff;
   }
+
   37.5% {
     background-color: rgb(244, 119, 3);
   }
+
   50% {
     background-color: #ffffff;
   }
+
   62.5% {
     background-color: rgb(244, 119, 3);
   }
+
   75% {
     background-color: #ffffff;
   }
+
   87.5% {
     background-color: rgb(244, 119, 3);
   }
@@ -897,7 +988,8 @@ margin-left: 25px;
   font-weight: bold;
   font-size: 1.2em;
   margin-bottom: 10px;
-  animation: changeColor 40s linear infinite; /* Animasi selama 40 detik, berulang tanpa henti */
+  animation: changeColor 40s linear infinite;
+  /* Animasi selama 40 detik, berulang tanpa henti */
 
 }
 
@@ -913,7 +1005,8 @@ margin-left: 25px;
   font-weight: bold;
   font-size: 1.2em;
   margin-bottom: 10px;
-  animation: changeColor 40s linear 2s infinite; /* Animasi selama 40 detik, berulang tanpa henti, dimulai setelah 2 detik */
+  animation: changeColor 40s linear 2s infinite;
+  /* Animasi selama 40 detik, berulang tanpa henti, dimulai setelah 2 detik */
 }
 
 .step-number3 {
@@ -928,7 +1021,8 @@ margin-left: 25px;
   font-weight: bold;
   font-size: 1.2em;
   margin-bottom: 10px;
-  animation: changeColor 40s linear 4s infinite; /* Animasi selama 40 detik, berulang tanpa henti, dimulai setelah 4 detik */
+  animation: changeColor 40s linear 4s infinite;
+  /* Animasi selama 40 detik, berulang tanpa henti, dimulai setelah 4 detik */
 }
 
 .step-number4 {
@@ -943,7 +1037,7 @@ margin-left: 25px;
   font-weight: bold;
   font-size: 1.2em;
   margin-bottom: 10px;
-  animation: changeColor 40s linear 6s infinite; 
+  animation: changeColor 40s linear 6s infinite;
 }
 
 .step-number5 {
@@ -985,28 +1079,34 @@ margin-left: 25px;
 
 .checkout-container p {
   color: #e4e0e0;
-  margin: 0; /* Hapus margin bawaan */
+  margin: 0;
+  /* Hapus margin bawaan */
 }
 
 .vertical-line {
-  border-left: 2px solid #ffffff; /* Warna dan ketebalan garis dapat disesuaikan */
-  height: 20px; /* Tinggi garis dapat disesuaikan */
+  border-left: 2px solid #ffffff;
+  /* Warna dan ketebalan garis dapat disesuaikan */
+  height: 20px;
+  /* Tinggi garis dapat disesuaikan */
   width: 2px;
-  margin: 0 auto; /* Menengahkan garis secara horizontal */
+  margin: 0 auto;
+  /* Menengahkan garis secara horizontal */
   margin-right: 460px;
   margin-top: 40px;
 }
 
 .checkout-container2 {
   display: flex;
-  align-items: center; /* Tengahkan secara vertikal */
+  align-items: center;
+  /* Tengahkan secara vertikal */
   margin-left: 370px;
 
 }
 
 .checkout-container2 p {
   color: #e4e0e0;
-  margin: 0; /* Hapus margin bawaan */
+  margin: 0;
+  /* Hapus margin bawaan */
 }
 
 
@@ -1046,12 +1146,14 @@ margin-left: 25px;
   border-bottom-left-radius: 15px;
   padding: 20px;
   width: fit-content;
-  justify-content: center; /* Mencenter horizontal */
-  align-items: center; /* Mencenter vertikal */
-  
+  justify-content: center;
+  /* Mencenter horizontal */
+  align-items: center;
+  /* Mencenter vertikal */
+
 }
 
-#weather{
+#weather {
   color: #777;
   font-family: 'Cuprum', sans-serif;
   font-family: 'Varela Round', sans-serif;
@@ -1065,14 +1167,14 @@ margin-left: 25px;
 
 
 
-.infonilai{
+.infonilai {
   align-items: center;
   position: relative;
   margin-left: 250px;
 
 }
 
-.box1{
+.box1 {
 
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -1089,13 +1191,16 @@ margin-left: 25px;
 }
 
 .row2 {
-  display: flex; /* Atur display menjadi flex */
+  display: flex;
+  /* Atur display menjadi flex */
   padding-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
-  transition: all 0.5s ease-in-out; /* Menerapkan transisi untuk perubahan konten */
+  transition: all 0.5s ease-in-out;
+  /* Menerapkan transisi untuk perubahan konten */
   margin-left: -20px;
-  align-items: center; /* Mencenter vertikal */
+  align-items: center;
+  /* Mencenter vertikal */
 }
 
 .avg {
@@ -1139,22 +1244,22 @@ margin-left: 25px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 150px;
-  
-}
-
-.kotak{
-
-margin-top: 150px;
-background-color: #ceced1;
-border-radius: 15px;
-border-color: #ddd;
-width: auto;
-height: 750px;
-margin-bottom: -20px;
 
 }
 
-.line{
+.kotak {
+
+  margin-top: 150px;
+  background-color: #ceced1;
+  border-radius: 15px;
+  border-color: #ddd;
+  width: auto;
+  height: 750px;
+  margin-bottom: -20px;
+
+}
+
+.line {
   background-color: #000000;
   width: 60px;
   height: 10px;
@@ -1162,7 +1267,8 @@ margin-bottom: -20px;
   border-radius: 30px;
   align-items: center;
   margin-left: 700px;
-  box-shadow: 0px 4px 6px rgb(255, 255, 255); /* Menambahkan drop shadow hanya pada bagian bawah */
+  box-shadow: 0px 4px 6px rgb(255, 255, 255);
+  /* Menambahkan drop shadow hanya pada bagian bawah */
 }
 
 
@@ -1188,7 +1294,7 @@ margin-bottom: -20px;
 }
 
 .video-container {
-  margin-top: 400px; 
+  margin-top: 400px;
   margin-bottom: 100px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.747);
   animation: floatUpDown 2s infinite alternate ease-in-out;
@@ -1198,20 +1304,21 @@ margin-bottom: -20px;
   from {
     transform: translateY(0);
   }
+
   to {
-    transform: translateY(20px); /* Adjust the distance of floating */
+    transform: translateY(20px);
+    /* Adjust the distance of floating */
   }
 }
 
 
-.kotakV{
+.kotakV {
 
-margin-top: -380px;
-max-width: max-content;
-max-height: max-content;
+  margin-top: -380px;
+  max-width: max-content;
+  max-height: max-content;
 
-margin-left: 455px;
-margin-bottom: 50px;
+  margin-left: 455px;
+  margin-bottom: 50px;
 
 }
-
